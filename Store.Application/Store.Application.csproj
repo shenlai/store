@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{72E98081-37CA-4850-9571-FB9A6FBAFD04}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Store.Application</RootNamespace>
+    <AssemblyName>Store.Application</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\packages\AutoMapper.4.0.4\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddressResolver.cs" />
+    <Compile Include="ApplicationService.cs" />
+    <Compile Include="AutoMapper\MapperConfig.cs" />
+    <Compile Include="InversedAddressResolver.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceImplementations\OrderServiceImpl.cs" />
+    <Compile Include="ServiceImplementations\ProductServiceImp.cs" />
+    <Compile Include="ServiceImplementations\UserServiceImpl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Store.Domain\Store.Domain.csproj">
+      <Project>{1fdb15d0-169d-4baa-8606-ba88ad95517e}</Project>
+      <Name>Store.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Store.Events.Handlers\Store.Events.Handlers.csproj">
+      <Project>{b6f5d7d6-31ef-4ab7-a161-6623bd5c90f4}</Project>
+      <Name>Store.Events.Handlers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Store.Events\Store.Events.csproj">
+      <Project>{9453ea8b-0088-4096-8852-b1babb37aa5b}</Project>
+      <Name>Store.Events</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Store.Infrastructure\Store.Infrastructure.csproj">
+      <Project>{7d0d94c1-8c1c-4191-b0df-1ba097f637a1}</Project>
+      <Name>Store.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Store.Repositories\Store.Repositories.csproj">
+      <Project>{604ea565-ff86-4879-934c-0cdaeabb8b67}</Project>
+      <Name>Store.Repositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Store.ServiceContracts\Store.ServiceContracts.csproj">
+      <Project>{04a77903-a85c-49f6-bbd9-5068757b7883}</Project>
+      <Name>Store.ServiceContracts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

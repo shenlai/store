@@ -1,0 +1,182 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store.Infrastructure", "Store.Infrastructure\Store.Infrastructure.csproj", "{7D0D94C1-8C1C-4191-B0DF-1BA097F637A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store.Domain", "Store.Domain\Store.Domain.csproj", "{1FDB15D0-169D-4BAA-8606-BA88AD95517E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store.Repositories", "Store.Repositories\Store.Repositories.csproj", "{604EA565-FF86-4879-934C-0CDAEABB8B67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store.ServiceContracts", "Store.ServiceContracts\Store.ServiceContracts.csproj", "{04A77903-A85C-49F6-BBD9-5068757B7883}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store.Web", "Store.Web\Store.Web.csproj", "{ED6B34C4-513E-4CAE-87FF-BD4CA266C980}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store.Application.Test", "Store.Application.Test\Store.Application.Test.csproj", "{732F389F-474F-4941-A907-137829D911A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store.Events", "Store.Events\Store.Events.csproj", "{9453EA8B-0088-4096-8852-B1BABB37AA5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store.Events.Handlers", "Store.Events.Handlers\Store.Events.Handlers.csproj", "{B6F5D7D6-31EF-4AB7-A161-6623BD5C90F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_Presentation", "1_Presentation", "{3CAAED53-D9C5-4145-AEA6-E493C3510A63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2_Application", "2_Application", "{89AC3532-9076-46C1-830C-FE21355861BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3_Domain", "3_Domain", "{28D3F0D6-CA67-4E1E-802F-4F0EB25457FF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4_Infrastructure", "4_Infrastructure", "{794336E5-59FE-43FB-B403-1B5EACFCFF3B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5_Event", "5_Event", "{15514094-2EEC-440F-8E7B-2C7826B25F30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store.UnitTest", "Store.UnitTest\Store.UnitTest.csproj", "{BB451B4D-B034-4980-B6CB-D1EB09DDAF27}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6_UnitTest", "6_UnitTest", "{0A6CFCEF-8779-4FBA-B62D-D2DFB9C78955}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store.Service.Wcf", "Store.Service.Wcf\Store.Service.Wcf.csproj", "{B14316A4-2372-409C-8B89-6E7F4D7E5172}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store.Application", "Store.Application\Store.Application.csproj", "{72E98081-37CA-4850-9571-FB9A6FBAFD04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store.Service.Api", "Store.Service.Api\Store.Service.Api.csproj", "{A4D0310A-2700-46A7-AD64-D4682ED10F0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlDataImportToMongo", "SqlDataImportToMongo\SqlDataImportToMongo.csproj", "{6D281D32-7F2F-4701-AA24-41587115FFD0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D0D94C1-8C1C-4191-B0DF-1BA097F637A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D0D94C1-8C1C-4191-B0DF-1BA097F637A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D0D94C1-8C1C-4191-B0DF-1BA097F637A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D0D94C1-8C1C-4191-B0DF-1BA097F637A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FDB15D0-169D-4BAA-8606-BA88AD95517E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FDB15D0-169D-4BAA-8606-BA88AD95517E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FDB15D0-169D-4BAA-8606-BA88AD95517E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FDB15D0-169D-4BAA-8606-BA88AD95517E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{604EA565-FF86-4879-934C-0CDAEABB8B67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{604EA565-FF86-4879-934C-0CDAEABB8B67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{604EA565-FF86-4879-934C-0CDAEABB8B67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{604EA565-FF86-4879-934C-0CDAEABB8B67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04A77903-A85C-49F6-BBD9-5068757B7883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04A77903-A85C-49F6-BBD9-5068757B7883}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04A77903-A85C-49F6-BBD9-5068757B7883}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04A77903-A85C-49F6-BBD9-5068757B7883}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED6B34C4-513E-4CAE-87FF-BD4CA266C980}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED6B34C4-513E-4CAE-87FF-BD4CA266C980}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED6B34C4-513E-4CAE-87FF-BD4CA266C980}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED6B34C4-513E-4CAE-87FF-BD4CA266C980}.Release|Any CPU.Build.0 = Release|Any CPU
+		{732F389F-474F-4941-A907-137829D911A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{732F389F-474F-4941-A907-137829D911A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{732F389F-474F-4941-A907-137829D911A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{732F389F-474F-4941-A907-137829D911A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9453EA8B-0088-4096-8852-B1BABB37AA5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9453EA8B-0088-4096-8852-B1BABB37AA5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9453EA8B-0088-4096-8852-B1BABB37AA5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9453EA8B-0088-4096-8852-B1BABB37AA5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6F5D7D6-31EF-4AB7-A161-6623BD5C90F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6F5D7D6-31EF-4AB7-A161-6623BD5C90F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6F5D7D6-31EF-4AB7-A161-6623BD5C90F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6F5D7D6-31EF-4AB7-A161-6623BD5C90F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB451B4D-B034-4980-B6CB-D1EB09DDAF27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB451B4D-B034-4980-B6CB-D1EB09DDAF27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB451B4D-B034-4980-B6CB-D1EB09DDAF27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB451B4D-B034-4980-B6CB-D1EB09DDAF27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B14316A4-2372-409C-8B89-6E7F4D7E5172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B14316A4-2372-409C-8B89-6E7F4D7E5172}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B14316A4-2372-409C-8B89-6E7F4D7E5172}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B14316A4-2372-409C-8B89-6E7F4D7E5172}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72E98081-37CA-4850-9571-FB9A6FBAFD04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72E98081-37CA-4850-9571-FB9A6FBAFD04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72E98081-37CA-4850-9571-FB9A6FBAFD04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72E98081-37CA-4850-9571-FB9A6FBAFD04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4D0310A-2700-46A7-AD64-D4682ED10F0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4D0310A-2700-46A7-AD64-D4682ED10F0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4D0310A-2700-46A7-AD64-D4682ED10F0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4D0310A-2700-46A7-AD64-D4682ED10F0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D281D32-7F2F-4701-AA24-41587115FFD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D281D32-7F2F-4701-AA24-41587115FFD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D281D32-7F2F-4701-AA24-41587115FFD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D281D32-7F2F-4701-AA24-41587115FFD0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7D0D94C1-8C1C-4191-B0DF-1BA097F637A1} = {794336E5-59FE-43FB-B403-1B5EACFCFF3B}
+		{1FDB15D0-169D-4BAA-8606-BA88AD95517E} = {28D3F0D6-CA67-4E1E-802F-4F0EB25457FF}
+		{604EA565-FF86-4879-934C-0CDAEABB8B67} = {28D3F0D6-CA67-4E1E-802F-4F0EB25457FF}
+		{04A77903-A85C-49F6-BBD9-5068757B7883} = {89AC3532-9076-46C1-830C-FE21355861BF}
+		{ED6B34C4-513E-4CAE-87FF-BD4CA266C980} = {3CAAED53-D9C5-4145-AEA6-E493C3510A63}
+		{732F389F-474F-4941-A907-137829D911A1} = {0A6CFCEF-8779-4FBA-B62D-D2DFB9C78955}
+		{9453EA8B-0088-4096-8852-B1BABB37AA5B} = {15514094-2EEC-440F-8E7B-2C7826B25F30}
+		{B6F5D7D6-31EF-4AB7-A161-6623BD5C90F4} = {15514094-2EEC-440F-8E7B-2C7826B25F30}
+		{BB451B4D-B034-4980-B6CB-D1EB09DDAF27} = {0A6CFCEF-8779-4FBA-B62D-D2DFB9C78955}
+		{B14316A4-2372-409C-8B89-6E7F4D7E5172} = {89AC3532-9076-46C1-830C-FE21355861BF}
+		{72E98081-37CA-4850-9571-FB9A6FBAFD04} = {89AC3532-9076-46C1-830C-FE21355861BF}
+		{A4D0310A-2700-46A7-AD64-D4682ED10F0E} = {89AC3532-9076-46C1-830C-FE21355861BF}
+		{6D281D32-7F2F-4701-AA24-41587115FFD0} = {0A6CFCEF-8779-4FBA-B62D-D2DFB9C78955}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\EnterpriseLibrary.Common.5.0.505.0\lib\NET35;packages\EnterpriseLibrary.Caching.5.0.505.0\lib\NET35
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 14
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://shlai.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Store.Application.Test\\Store.Application.Test.csproj
+		SccProjectTopLevelParentUniqueName1 = Store.sln
+		SccProjectName1 = Store.Application.Test
+		SccLocalPath1 = Store.Application.Test
+		SccProjectUniqueName2 = Store.Domain\\Store.Domain.csproj
+		SccProjectTopLevelParentUniqueName2 = Store.sln
+		SccProjectName2 = Store.Domain
+		SccLocalPath2 = Store.Domain
+		SccProjectUniqueName3 = Store.Events.Handlers\\Store.Events.Handlers.csproj
+		SccProjectTopLevelParentUniqueName3 = Store.sln
+		SccProjectName3 = Store.Events.Handlers
+		SccLocalPath3 = Store.Events.Handlers
+		SccProjectUniqueName4 = Store.Events\\Store.Events.csproj
+		SccProjectTopLevelParentUniqueName4 = Store.sln
+		SccProjectName4 = Store.Events
+		SccLocalPath4 = Store.Events
+		SccProjectUniqueName5 = Store.Infrastructure\\Store.Infrastructure.csproj
+		SccProjectTopLevelParentUniqueName5 = Store.sln
+		SccProjectName5 = Store.Infrastructure
+		SccLocalPath5 = Store.Infrastructure
+		SccProjectUniqueName6 = Store.Repositories\\Store.Repositories.csproj
+		SccProjectTopLevelParentUniqueName6 = Store.sln
+		SccProjectName6 = Store.Repositories
+		SccLocalPath6 = Store.Repositories
+		SccProjectUniqueName7 = Store.ServiceContracts\\Store.ServiceContracts.csproj
+		SccProjectTopLevelParentUniqueName7 = Store.sln
+		SccProjectName7 = Store.ServiceContracts
+		SccLocalPath7 = Store.ServiceContracts
+		SccProjectUniqueName8 = Store.Web\\Store.Web.csproj
+		SccProjectTopLevelParentUniqueName8 = Store.sln
+		SccProjectName8 = Store.Web
+		SccLocalPath8 = Store.Web
+		SccProjectUniqueName9 = Store.UnitTest\\Store.UnitTest.csproj
+		SccProjectTopLevelParentUniqueName9 = Store.sln
+		SccProjectName9 = Store.UnitTest
+		SccLocalPath9 = Store.UnitTest
+		SccProjectUniqueName10 = Store.Service.Wcf\\Store.Service.Wcf.csproj
+		SccProjectTopLevelParentUniqueName10 = Store.sln
+		SccProjectName10 = Store.Service.Wcf
+		SccLocalPath10 = Store.Service.Wcf
+		SccProjectUniqueName11 = Store.Application\\Store.Application.csproj
+		SccProjectTopLevelParentUniqueName11 = Store.sln
+		SccProjectName11 = Store.Application
+		SccLocalPath11 = Store.Application
+		SccProjectUniqueName12 = Store.Service.Api\\Store.Service.Api.csproj
+		SccProjectTopLevelParentUniqueName12 = Store.sln
+		SccProjectName12 = Store.Service.Api
+		SccLocalPath12 = Store.Service.Api
+		SccProjectUniqueName13 = SqlDataImportToMongo\\SqlDataImportToMongo.csproj
+		SccProjectTopLevelParentUniqueName13 = Store.sln
+		SccProjectName13 = SqlDataImportToMongo
+		SccLocalPath13 = SqlDataImportToMongo
+	EndGlobalSection
+EndGlobal

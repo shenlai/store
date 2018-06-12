@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{604EA565-FF86-4879-934C-0CDAEABB8B67}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Store.Repositories</RootNamespace>
+    <AssemblyName>Store.Repositories</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Bson, Version=2.2.4.26, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Bson.2.2.4\lib\net45\MongoDB.Bson.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=2.2.4.26, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.2.2.4\lib\net45\MongoDB.Driver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core, Version=2.2.4.26, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.Core.2.2.4\lib\net45\MongoDB.Driver.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Legacy, Version=2.2.4.26, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\mongocsharpdriver.2.2.4\lib\net45\MongoDB.Driver.Legacy.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EntityFramework\StoreDbContext.cs" />
+    <Compile Include="EntityFramework\CategoryRepository.cs" />
+    <Compile Include="EntityFramework\EntityFrameworkRepository.cs" />
+    <Compile Include="EntityFramework\EntityFrameworkRepositoryContext.cs" />
+    <Compile Include="EntityFramework\IEntityFrameworkRepositoryContext.cs" />
+    <Compile Include="EntityFramework\OrderRepository.cs" />
+    <Compile Include="EntityFramework\ProductCategorizationRepository.cs" />
+    <Compile Include="EntityFramework\ProductRepository.cs" />
+    <Compile Include="EntityFramework\RoleRepository.cs" />
+    <Compile Include="EntityFramework\ShoppingCartItemRepository.cs" />
+    <Compile Include="EntityFramework\ShoppingCartRepository.cs" />
+    <Compile Include="EntityFramework\SortByExtension.cs" />
+    <Compile Include="EntityFramework\UserRepository.cs" />
+    <Compile Include="EntityFramework\UserRoleRepository.cs" />
+    <Compile Include="Migrations\201508030534570_InitialCreate.cs" />
+    <Compile Include="Migrations\201508030534570_InitialCreate.Designer.cs">
+      <DependentUpon>201508030534570_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201508050623391_MigrationTest.cs" />
+    <Compile Include="Migrations\201508050623391_MigrationTest.Designer.cs">
+      <DependentUpon>201508050623391_MigrationTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201508060729587_AddUserClass.cs" />
+    <Compile Include="Migrations\201508060729587_AddUserClass.Designer.cs">
+      <DependentUpon>201508060729587_AddUserClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201508251612425_ShoppingCartModel.cs" />
+    <Compile Include="Migrations\201508251612425_ShoppingCartModel.Designer.cs">
+      <DependentUpon>201508251612425_ShoppingCartModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201508301516220_OrderModelUpdate.cs" />
+    <Compile Include="Migrations\201508301516220_OrderModelUpdate.Designer.cs">
+      <DependentUpon>201508301516220_OrderModelUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201508311011104_OrderModelModified.cs" />
+    <Compile Include="Migrations\201508311011104_OrderModelModified.Designer.cs">
+      <DependentUpon>201508311011104_OrderModelModified.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="MongoDb\Convention\GuidIDGeneratorConvention.cs" />
+    <Compile Include="MongoDb\IMongoDBRepositoryContext.cs" />
+    <Compile Include="MongoDb\IMongoDBRepositoryContextSettings.cs" />
+    <Compile Include="MongoDb\MongoDBBootstrapper.cs" />
+    <Compile Include="MongoDb\MongoDBRepository.cs" />
+    <Compile Include="MongoDb\MongoDBRepositoryContext.cs" />
+    <Compile Include="MongoDb\MongoDBRepositoryContextSettings.cs" />
+    <Compile Include="MongoDb\Convention\UseLocalDateTimeConvention.cs" />
+    <Compile Include="MongoDb\ProductRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Store.Domain\Store.Domain.csproj">
+      <Project>{1fdb15d0-169d-4baa-8606-ba88ad95517e}</Project>
+      <Name>Store.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Store.Infrastructure\Store.Infrastructure.csproj">
+      <Project>{7d0d94c1-8c1c-4191-b0df-1ba097f637a1}</Project>
+      <Name>Store.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201508030534570_InitialCreate.resx">
+      <DependentUpon>201508030534570_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508050623391_MigrationTest.resx">
+      <DependentUpon>201508050623391_MigrationTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508060729587_AddUserClass.resx">
+      <DependentUpon>201508060729587_AddUserClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508251612425_ShoppingCartModel.resx">
+      <DependentUpon>201508251612425_ShoppingCartModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508301516220_OrderModelUpdate.resx">
+      <DependentUpon>201508301516220_OrderModelUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508311011104_OrderModelModified.resx">
+      <DependentUpon>201508311011104_OrderModelModified.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
