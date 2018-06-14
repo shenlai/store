@@ -1,4 +1,5 @@
 ﻿
+using Store.Web.UserService;
 using System;
 using System.Collections.Generic;
 using System.Linq;

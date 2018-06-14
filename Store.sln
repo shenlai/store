@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store.Service.Api", "Store.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlDataImportToMongo", "SqlDataImportToMongo\SqlDataImportToMongo.csproj", "{6D281D32-7F2F-4701-AA24-41587115FFD0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store.Redlock", "Store.Redlock\Store.Redlock.csproj", "{DC28768E-8319-46AF-B40B-8D5BB1C69AC9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{6D281D32-7F2F-4701-AA24-41587115FFD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D281D32-7F2F-4701-AA24-41587115FFD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D281D32-7F2F-4701-AA24-41587115FFD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC28768E-8319-46AF-B40B-8D5BB1C69AC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC28768E-8319-46AF-B40B-8D5BB1C69AC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC28768E-8319-46AF-B40B-8D5BB1C69AC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC28768E-8319-46AF-B40B-8D5BB1C69AC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -117,6 +123,7 @@ Global
 		{72E98081-37CA-4850-9571-FB9A6FBAFD04} = {89AC3532-9076-46C1-830C-FE21355861BF}
 		{A4D0310A-2700-46A7-AD64-D4682ED10F0E} = {89AC3532-9076-46C1-830C-FE21355861BF}
 		{6D281D32-7F2F-4701-AA24-41587115FFD0} = {0A6CFCEF-8779-4FBA-B62D-D2DFB9C78955}
+		{DC28768E-8319-46AF-B40B-8D5BB1C69AC9} = {794336E5-59FE-43FB-B403-1B5EACFCFF3B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPath = packages\EnterpriseLibrary.Common.5.0.505.0\lib\NET35;packages\EnterpriseLibrary.Caching.5.0.505.0\lib\NET35
